@@ -1,0 +1,21 @@
+name: Build Release
+
+on: release
+  
+jobs:
+  build:
+    name: Build and upload actor filter
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build and test
+      run: ./mvnw -B verify
+   
+    - name: Upload Release
+      uses: JasonEtco/upload-to-release@master
+      with:
+        args: target/users-list-actorfilter-${{ github.event.release.tag_name }}.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
