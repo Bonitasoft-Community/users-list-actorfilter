@@ -1,5 +1,7 @@
 # Users List Actor Filter
 
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=Bonitasoft-Community_users-list-actorfilter&metric=alert_status)](https://sonarcloud.io/dashboard?id=Bonitasoft-Community_users-list-actorfilter)
+
 Select a sublist of candidates for a task among the list of users of the Actor
 
 ## Build
