@@ -13,7 +13,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-       fetch-depth: 00
+       fetch-depth: 0
+       
+    - name: Setup Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
 
     - name: Build and test
       env:
