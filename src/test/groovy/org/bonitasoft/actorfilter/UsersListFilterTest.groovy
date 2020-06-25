@@ -85,7 +85,7 @@ class UsersListFilterTest extends Specification {
         filter.setInputParameters([(UsersListFilter.AUTOASSIGN_INPUT):'1'])
 
         when: 'Validating inputs'
-        filter.validateInputParameters()
+        filter.checkBoolean(UsersListFilter.AUTOASSIGN_INPUT)
 
         then: 'ConnectorValidationException is thrown'
         thrown ConnectorValidationException
@@ -111,6 +111,16 @@ class UsersListFilterTest extends Specification {
         
         then: 'Should not autoassign task if single result'
         autoassign == false
+    }
+    
+    def should_validate_input_parameter() {
+        given: 'Valid input parameter'
+        filter.setInputParameters([(UsersListFilter.AUTOASSIGN_INPUT):false,(UsersListFilter.USERS_INPUT):[1L,2L]])
+
+        when:
+        filter.validateInputParameters()
+        
+        then: 'No exception is thrown'
     }
 
     def should_return_the_list_of_selected_candidates() {

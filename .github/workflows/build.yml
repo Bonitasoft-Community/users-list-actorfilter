@@ -14,4 +14,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build and test
-      run: ./mvnw clean install
+      run: ./mvnw -B clean verify sonar:sonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
