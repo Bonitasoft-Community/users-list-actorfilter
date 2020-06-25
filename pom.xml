@@ -5,7 +5,7 @@
 
 	<groupId>org.bonitasoft.actorfilter</groupId>
 	<artifactId>users-list-actorfilter</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>users-list-actorfilter</name>
 	<packaging>jar</packaging>
 
