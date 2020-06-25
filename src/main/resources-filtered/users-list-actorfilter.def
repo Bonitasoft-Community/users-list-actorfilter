@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+    <id>${definition-id}</id> <!-- Id of the definition -->
+    <version>${definition-version}</version> <!-- Version of the definition -->
+    <icon>icon.png</icon> <!-- The icon used in the Studio for this definition -->
+    <category id="organization" icon="actors_mapping.png" />
+  	
+    <input mandatory="true" name="users" type="java.util.List" />
+    <input mandatory="true" name="autoassign" type="java.lang.Boolean" defaultValue="false" />
+   
+    <page id="usersPage">
+        <widget xsi:type="definition:Text" id="usersWidget" inputName="users"/>
+        <widget xsi:type="definition:Checkbox" id="autoassignWidget" inputName="autoassign"/>
+    </page>
+</definition:ConnectorDefinition>
