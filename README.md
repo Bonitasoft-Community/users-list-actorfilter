@@ -1,7 +1,8 @@
 # Users List Actor Filter
 
-[![GitHub version](https://badge.fury.io/gh/Bonitasoft-Community%2Fusers-list-actorfilter.svg)](https://badge.fury.io/gh/Bonitasoft-Community%2Fusers-list-actorfilter)
+![](https://github.com/Bonitasoft-Community/users-list-actorfilter/workflows/Build/badge.svg)
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=Bonitasoft-Community_users-list-actorfilter&metric=alert_status)](https://sonarcloud.io/dashboard?id=Bonitasoft-Community_users-list-actorfilter)
+[![GitHub version](https://badge.fury.io/gh/Bonitasoft-Community%2Fusers-list-actorfilter.svg)](https://badge.fury.io/gh/Bonitasoft-Community%2Fusers-list-actorfilter)
 
 Select a sublist of candidates for a task among the list of users of the Actor
 
